@@ -62,3 +62,10 @@
 // async function run() {
 //   await connect(`mongodb://localhost/${process.env.DB_NAME}`)
 // }
+
+// PORT = 3000
+
+// DB_USER = "brianpham"
+// DB_PASS = ""
+// DB_NAME = "rnr"
+// DB_HOST = "localhost"

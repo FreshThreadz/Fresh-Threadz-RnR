@@ -17,8 +17,6 @@ pool.query('SELECT * FROM reviews WHERE id = 1 limit 1', (err, res) => {
   else {console.log('psql db connected')}
 })
 
-module.exports = pool;
-
 app.listen(port, () => {
   console.log(`[server]: Server is running at https://localhost:${port}`);
 });
