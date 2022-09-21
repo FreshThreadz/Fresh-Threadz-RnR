@@ -33,7 +33,7 @@ router.get('/', async(req ,res) => {
   })
   .status(200)
 
-  console.log('Reviews successfully fetched');
+  // console.log('Reviews successfully fetched');
 })
 
 router.get('/meta', async (req, res) => {
@@ -45,27 +45,27 @@ router.get('/meta', async (req, res) => {
   })
   .status(200)
 
-  console.log('Meta data successfully fetched');
+  // console.log('Meta data successfully fetched');
 })
 
 
 router.post('/', async (req, res) => {
   const review_id = await postReviews(req.body);
   res.sendStatus(201)
-  console.log(`Review successfully posted, review_id: ${review_id}`);
+  // console.log(`Review successfully posted, review_id: ${review_id}`);
 })
 
 router.put('/:review_id/helpful', async (req, res) => {
   const review_id = Number(req.params.review_id);
   await helpful(review_id);
   res.sendStatus(204)
-  console.log(`Review successfully updated (helpfulness), id: ${review_id}`);
+  // console.log(`Review successfully updated (helpfulness), id: ${review_id}`);
 })
 
 router.put('/:review_id/report', async (req, res) => {
   const review_id = Number(req.params.review_id);
   await report(review_id);
   res.sendStatus(204)
-  console.log(`Review successfully reported, id: ${review_id}`);
+  // console.log(`Review successfully reported, id: ${review_id}`);
 })
 
