@@ -52,7 +52,7 @@ router.get('/meta', async (req, res) => {
 router.post('/', async (req, res) => {
   const review_id = await postReviews(req.body);
   res.sendStatus(201)
-  // console.log(`Review successfully posted, review_id: ${review_id}`);
+  console.log(`Review successfully posted, review_id: ${review_id}`);
 })
 
 router.put('/:review_id/helpful', async (req, res) => {
