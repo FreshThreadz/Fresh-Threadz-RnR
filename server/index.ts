@@ -2,6 +2,7 @@ import express, {Express} from 'express';
 import dotenv from 'dotenv';
 import { router } from './routes';
 import {pool} from '../db/postgres';
+const cors = require('cors');
 const morgan = require('morgan');
 
 dotenv.config();
@@ -14,6 +15,7 @@ app.use(express.json());
 // app.get(`/${process.env.LOADER}`, //loaderio link (will change after each ECS Instance stop)
 //   (req, res) => res.send(process.env.LOADER))
 app.use(morgan('dev'));
+app.use(cors());
 app.use('/reviews', router);
 
 pool.connect()
