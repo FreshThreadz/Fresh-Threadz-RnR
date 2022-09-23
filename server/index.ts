@@ -11,8 +11,8 @@ const port = process.env.PORT;
 app.use(express.json());
 
 
-app.get('/loaderio-b4c63820dbfe430fc8a14fb748959cc7',
-  (req, res) => res.send('loaderio-b4c63820dbfe430fc8a14fb748959cc7'))
+app.get(`/${process.env.LOADER}`, //loaderio link (will change after each ECS Instance stop)
+  (req, res) => res.send(process.env.LOADER))
 app.use(morgan('dev'));
 app.use('/reviews', router);
 
