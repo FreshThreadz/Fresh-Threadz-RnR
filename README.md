@@ -1,6 +1,6 @@
 # Overview
 
-Developed a Rest API for the Ratings and Reviews module for an existing e-commerce front-end application to extract data from
+Developed a Rest API for the Ratings and Reviews module for an existing e-commerce front-end application to extract data from.
 
 ## Technologies Used
 
