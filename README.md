@@ -65,6 +65,7 @@ Database and server were deployed to an AWS EC2 instance. Initially aiming for a
 <img width="1085" alt="3 Servers 1200" src="https://user-images.githubusercontent.com/107714292/192110379-cd913ebf-9af3-4045-b62e-61d0218a53a1.png">
 
 ##### Adding cache #####
-- After adding caching to our Nginx, we were able to hit up to 5000 requests per second and peaking at 7000.
+- After adding caching to our Nginx, we are able to store our previous searched queries
+- This allowed us to hit up to 5000 requests per second and peaking at 7000.
 
 <img width="1062" alt="Cache 5000 Reviews" src="https://user-images.githubusercontent.com/107714292/192110384-c38cf9c4-cb2f-452d-a095-acc2eda02c6f.png">
