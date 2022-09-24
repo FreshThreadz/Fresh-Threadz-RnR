@@ -50,7 +50,7 @@ Nginx was used to create a load balancer to host multiple servers and scale traf
 With two servers, our backend application was now able to reach our goal of 1000 requests per second and got our error rate to 0%. I wanted to push for greataer results however, two servers alone could not handle over 1000 requests without crashing so we added a third.
 
 ##### Three Servers #####
-A third server was able to help us reach 1200 requests per second, but caused error rate to increase. This was a trade-off I would have to consider when trying to optimize.
+A third server at 1000 was actually slower than two servers, but was able to help us reach 1200 requests per second with some error rate. This was a trade-off to consider when trying to scale to handle more requests per second.
 
 ##### Adding cache #####
 However, after adding caching to our Nginx, we were able to hit up to 5000 requests per second and peaking at 7000.
