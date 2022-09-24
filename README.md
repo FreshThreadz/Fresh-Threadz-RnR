@@ -2,10 +2,13 @@
 
 Developed a Rest API for the Ratings and Reviews module for an existing e-commerce front-end application to extract data from
 
+## Technologies Used
+
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+
 ## Database
 
 A sequel database gives the ability to improve our look up times by creating indexes in our tables. For an ecommerce website which has more heavy get-requests among other requests, we choose PostgreSQL to handle this job.
-
 
 ## Queries
 
@@ -46,12 +49,8 @@ Database and server were deployed to an AWS EC2 instance. Initially aiming for a
 ## Optimization
 - Nginx was used to create a load balancer to host multiple servers and scale traffic of incoming requests
 - This resulted in increased speed for requests per second and reduced error rate
-
-<details><summary>1 Server</summary>
   
 <img width="1142" alt="1 Server" src="https://user-images.githubusercontent.com/107714292/192110362-0b9b9157-38a3-4c2d-b7d2-7616550eef3b.png">  
-  
-</details>
 
 ##### Two Servers #####
 - With two servers, our backend application was now able to reach our goal of 1000 requests per second and got our error rate to 0%
@@ -69,7 +68,3 @@ Database and server were deployed to an AWS EC2 instance. Initially aiming for a
 - After adding caching to our Nginx, we were able to hit up to 5000 requests per second and peaking at 7000.
 
 <img width="1062" alt="Cache 5000 Reviews" src="https://user-images.githubusercontent.com/107714292/192110384-c38cf9c4-cb2f-452d-a095-acc2eda02c6f.png">
-
-## Technologies Used
-
-![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
