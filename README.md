@@ -1,4 +1,12 @@
-# Description
+# Overview
+
+Developed a Rest API for the Ratings and Reviews module for an existing e-commerce front-end application to extract data from
+
+# Details
+## Database
+
+A sequel database gives the ability to improve our look up times by creating indexes in our tables. For an ecommerce website which has more heavy get-requests among other requests, we choose PostgreSQL to handle this job.
+
 
 ## Technologies Used
 
