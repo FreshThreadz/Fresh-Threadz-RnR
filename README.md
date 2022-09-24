@@ -47,9 +47,11 @@ Database and server were deployed to an AWS EC2 instance. Initially aiming for a
 - Nginx was used to create a load balancer to host multiple servers and scale traffic of incoming requests
 - This resulted in increased speed for requests per second and reduced error rate
 
-<1 Server>
+<details><summary>1 Server</summary>
+  
 <img width="1142" alt="1 Server" src="https://user-images.githubusercontent.com/107714292/192110362-0b9b9157-38a3-4c2d-b7d2-7616550eef3b.png">  
-</1 Server>
+  
+</details>
 
 ##### Two Servers #####
 - With two servers, our backend application was now able to reach our goal of 1000 requests per second and got our error rate to 0%
