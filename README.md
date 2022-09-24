@@ -34,12 +34,26 @@ Took the approach of using nested queries over individual queries to create my o
         {
           "id": 2,
           "url": "urlplaceholder/review_5_photo_number_2.jpg"
-        }
-      ]
+       }]
     }
   ]
 }
 ```
+
+## Deployment
+Database and server were deployed to an AWS EC2 instance. Initialling aim for a goal of 1000 requests per second with (>50 ms) and (>1% error rate), one server could not handle having 600 requests per second.
+
+## Optimization
+Nginx was used to create a load balancer to host multiple servers and scale traffic of incoming requests resulting in increased speed for requests per second and reduced error rate.
+
+##### Two Servers #####
+With two servers, our backend application was now able to reach our goal of 1000 requests per second and got our error rate to 0%. I wanted to push for greataer results however, two servers alone could not handle over 1000 requests without crashing so we added a third.
+
+##### Three Servers #####
+A third server was able to help us reach 1200 requests per second, but caused error rate to increase. This was a trade-off I would have to consider when trying to optimize.
+
+##### Adding cache #####
+However, after adding caching to our Nginx, we were able to hit up to 5000 requests per second and peaking at 7000.
 
 ## Technologies Used
 
